@@ -2,6 +2,8 @@ import { sitePath } from "@/lib/site-path";
 // Keep factual portfolio content here; layout belongs in app/ and components/.
 export const profile = {
   name: "Andrian Cedric",
+  // Add your image to public/images and set this to "/images/portrait.jpg".
+  portrait: "",
   email: "andriancedric@gmail.com",
   linkedin: "https://www.linkedin.com/in/andrian-cedric-46822015b/",
   resume: sitePath("/Andrian-Cedric-Resume.pdf"),

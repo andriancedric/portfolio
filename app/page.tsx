@@ -4,7 +4,7 @@ import {
   ArrowDown,
   Layers3,
   Workflow,
-  Component,
+  UserRound,
 } from "lucide-react";
 import PortfolioNav from "@/components/portfolio-nav";
 import PortfolioFooter from "@/components/portfolio-footer";
@@ -37,37 +37,25 @@ export default function Home() {
                 <a className="button primary" href="#work">
                   Explore my work <ArrowDown size={18} />
                 </a>
-                <a
-                  className="text-link"
-                  href={profile.resume}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View résumé <ArrowUpRight size={17} />
-                </a>
               </div>
             </div>
             <div className="hero-visual">
               <div className="visual-caption">
-                <span>FROM COMPONENTS TO CONNECTED EXPERIENCES</span>
-                <Layers3 size={19} />
+                <span>THE PERSON BEHIND THE PROCESS</span>
+                <UserRound size={19} />
               </div>
-              <div className="hero-project">
-                <img
-                  src={sitePath("/images/dwp-system.png")}
-                  alt="Digital Workplace design system: reusable interface components and variants"
-                  fetchPriority="high"
-                />
-                <div className="hero-image-caption">
-                  <span>DIGITAL WORKPLACE</span>
-                  <span>Bank Indonesia</span>
-                </div>
-              </div>
-              <div className="floating-note">
-                <Component size={23} />
-                <div>
-                  Built to work together
-                  <span>20+ components & their variants</span>
+              <div className="portrait-frame">
+                {profile.portrait ? (
+                  <img className="portrait-photo" src={sitePath(profile.portrait)} alt="Andrian Cedric" fetchPriority="high" />
+                ) : (
+                  <div className="portrait-placeholder" role="img" aria-label="Reserved space for Andrian Cedric’s portrait">
+                    <span className="portrait-monogram" aria-hidden="true">AC</span>
+                    <span className="portrait-label">PORTRAIT COMING SOON</span>
+                  </div>
+                )}
+                <div className="portrait-caption">
+                  <strong>Andrian Cedric</strong>
+                  <span>Product & UI/UX Designer · Jakarta</span>
                 </div>
               </div>
               <div className="visual-footnote">
@@ -145,9 +133,7 @@ export default function Home() {
           <div className="other-projects">
             <a
               className="project-row"
-              href="https://andriancedric.framer.ai/portfolio-st-engineering"
-              target="_blank"
-              rel="noreferrer"
+              href={sitePath("/work/st-engineering/")}
             >
               <span className="row-number">02</span>
               <div className="row-icon">
@@ -159,7 +145,7 @@ export default function Home() {
                 <p>19 forms · Enterprise UX · Rapid prototyping</p>
               </div>
               <span className="row-link">
-                Original case study <ArrowUpRight size={20} />
+                View case study <ArrowUpRight size={20} />
               </span>
             </a>
             <a
@@ -193,14 +179,6 @@ export default function Home() {
                 <span className="muted-heading">product challenges.</span>
               </h2>
             </div>
-            <a
-              className="text-link"
-              href={profile.resume}
-              target="_blank"
-              rel="noreferrer"
-            >
-              View full résumé <ArrowUpRight size={18} />
-            </a>
           </div>
           <div className="experience-list">
             {experience.map((job) => (

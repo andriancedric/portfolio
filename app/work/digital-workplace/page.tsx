@@ -1,6 +1,6 @@
 import { sitePath } from "@/lib/site-path";
 import type { Metadata } from "next";
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import PortfolioNav from "@/components/portfolio-nav";
 import PortfolioFooter from "@/components/portfolio-footer";
 export const metadata: Metadata = {
@@ -74,14 +74,6 @@ export default function Dwp() {
                 </a>
               ))}
             </nav>
-            <a
-              className="text-link"
-              href={sitePath("/Andrian-Cedric-Resume.pdf")}
-              target="_blank"
-              rel="noreferrer"
-            >
-              View résumé <ArrowUpRight size={15} />
-            </a>
           </aside>
           <article className="case-article">
             <section id="overview">
