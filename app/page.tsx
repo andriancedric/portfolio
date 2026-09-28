@@ -150,9 +150,7 @@ export default function Home() {
             </a>
             <a
               className="project-row"
-              href="https://andriancedric.framer.ai/portfolio-ctp"
-              target="_blank"
-              rel="noreferrer"
+              href={sitePath("/work/ctp/")}
             >
               <span className="row-number">03</span>
               <div className="row-icon">
@@ -164,7 +162,7 @@ export default function Home() {
                 <p>10+ user flows · Financial systems · UI/UX redesign</p>
               </div>
               <span className="row-link">
-                Original case study <ArrowUpRight size={20} />
+                View case study <ArrowUpRight size={20} />
               </span>
             </a>
           </div>
