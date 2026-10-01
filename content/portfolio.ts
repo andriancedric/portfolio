@@ -3,7 +3,7 @@ import { sitePath } from "@/lib/site-path";
 export const profile = {
   name: "Andrian Cedric",
   // Add your image to public/images and set this to "/images/portrait.jpg".
-  portrait: "",
+  portrait: "/images/portrait.jpg",
   email: "andriancedric@gmail.com",
   linkedin: "https://www.linkedin.com/in/andrian-cedric-46822015b/",
   resume: sitePath("/Andrian-Cedric-Resume.pdf"),
@@ -19,16 +19,16 @@ export const experience = [
   {
     period: "Sep 2021 — Aug 2025",
     company: "Moonlay Technologies",
-    role: "UI/UX Designer",
+    role: "UI/UX Designer (Product and Design Lead - 2024)",
     description:
       "Research, design systems, and prototypes for banking, capital markets, aviation, and retail analytics.",
   },
   {
-    period: "2021 — 2025",
+    period: "Seasonal/Project-based",
     company: "Independent projects",
     role: "UI/UX Design & Web Development",
     description:
-      "Design and implementation for architecture, education, editorial, and sustainability-focused websites.",
+      "Design and implementation for architecture, concert info, and sustainability-focused websites.",
   },
 ];
 export const capabilities = [
@@ -38,4 +38,5 @@ export const capabilities = [
   "Prototyping",
   "User research",
   "Developer collaboration",
+  "AI Workflow"
 ];
