@@ -28,7 +28,7 @@ export const experience = [
     company: "Independent projects",
     role: "UI/UX Design & Web Development",
     description:
-      "Design and implementation for architecture, concert info, and sustainability-focused websites.",
+      "Design and implementation for architecture, education, editorial, and sustainability-focused websites.",
   },
 ];
 export const capabilities = [
