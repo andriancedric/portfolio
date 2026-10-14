@@ -1,0 +1,11 @@
+DWP template update
+Base: main 2312ca57f5a012969f5fed301122f2c11f60707f
+
+Copy these six files into your portfolio repository, preserving paths. This is an update package, not a complete standalone project. No changes to your profile, CV, or other projects.
+
+Read docs/DWP-CONTENT-GUIDE.md.
+Template preview: DWP_SHOW_DRAFTS=true npm run dev
+Public view: npm run dev
+Visit /work/digital-workplace/
+
+Not pushed or deployed.

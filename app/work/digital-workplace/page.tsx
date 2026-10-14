@@ -1,3 +1,4 @@
+import { MasterMockups, DevelopmentReference } from "@/components/dwp-mockups";
 import { sitePath } from "@/lib/site-path";
 import type { Metadata } from "next";
 import { ArrowLeft } from "lucide-react";
@@ -12,7 +13,9 @@ const sections = [
   ["overview", "Overview"],
   ["challenge", "The challenge"],
   ["contribution", "Contribution"],
-  ["approach", "Design approach"],
+  ["design-system", "Design System"],
+  ["master-mockup", "Master Mockup"],
+  ["development-reference", "Development reference"],
   ["deliverables", "Deliverables"],
   ["reflection", "Reflection"],
 ];
@@ -53,6 +56,10 @@ export default function Dwp() {
               <strong>Figma</strong>
             </div>
           </div>
+          <nav className="dwp-tracks" aria-label="Explore DWP contributions">
+            <a href="#design-system"><span>01 / DESIGN SYSTEM</span><strong>A consistent foundation</strong><p>Components, variants, and a shared visual language.</p></a>
+            <a href="#master-mockup"><span>02 / MASTER MOCKUP</span><strong>The system in context</strong><p>Feature designs and a reference for development.</p></a>
+          </nav>
           <figure className="case-cover">
             <img
               src={sitePath("/images/dwp-system.png")}
@@ -165,8 +172,9 @@ export default function Dwp() {
                 does not imply sole ownership of every design decision.
               </p>
             </section>
-            <section id="approach">
-              <div className="eyebrow">04 / DESIGN APPROACH</div>
+            <section id="design-system">
+              <span id="approach" />
+              <div className="eyebrow">04 / DESIGN SYSTEM</div>
               <h2>
                 Connect the components
                 <br />
@@ -194,17 +202,6 @@ export default function Dwp() {
                   </p>
                 </div>
               </div>
-              <div className="decision">
-                <span>03</span>
-                <div>
-                  <h3>Make current mockups easier to reference</h3>
-                  <p>
-                    A master mockup structure brings the latest designs for each
-                    feature into a shared reference, complementing sprint-based
-                    work across desktop, iPad, and mobile.
-                  </p>
-                </div>
-              </div>
               <figure className="detail-figure">
                 <a
                   href={sitePath("/images/dwp-system.png")}
@@ -224,8 +221,10 @@ export default function Dwp() {
                 </figcaption>
               </figure>
             </section>
+            <MasterMockups />
+            <DevelopmentReference />
             <section id="deliverables">
-              <div className="eyebrow">05 / DELIVERABLES</div>
+              <div className="eyebrow">07 / DELIVERABLES</div>
               <h2>
                 A foundation for
                 <br />
@@ -254,7 +253,7 @@ export default function Dwp() {
               </p>
             </section>
             <section id="reflection">
-              <div className="eyebrow">06 / REFLECTION</div>
+              <div className="eyebrow">08 / REFLECTION</div>
               <h2>
                 A library is only part
                 <br />
