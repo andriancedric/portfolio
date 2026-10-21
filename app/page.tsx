@@ -5,6 +5,7 @@ import {
   Layers3,
   Workflow,
   UserRound,
+  MessageSquare,
 } from "lucide-react";
 import PortfolioNav from "@/components/portfolio-nav";
 import PortfolioFooter from "@/components/portfolio-footer";
@@ -164,6 +165,16 @@ export default function Home() {
               <span className="row-link">
                 View case study <ArrowUpRight size={20} />
               </span>
+            </a>
+            <a className="project-row" href={sitePath("/work/portfolio-revamp/")}>
+              <span className="row-number">04</span>
+              <div className="row-icon"><MessageSquare /></div>
+              <div>
+                <span className="eyebrow">PERSONAL PROJECT / AI COLLABORATION</span>
+                <h3>Rebuilding my portfolio with AI as a collaborator</h3>
+                <p>Design critique · Clear direction · Hands-on implementation</p>
+              </div>
+              <span className="row-link">View case study <ArrowUpRight size={20} /></span>
             </a>
           </div>
         </section>
